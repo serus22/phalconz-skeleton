@@ -75,7 +75,7 @@ class Application extends BaseApplication
          */
         if($config->db->adapter === "mongo") {
             $di->set('mongo', function() use (&$config) {
-                $mongo = new \MongoClient($config->db->host . ":" . $config->db->port);
+                $mongo = new MongoClient($config->db->host . ":" . $config->db->port);
                 return $mongo->selectDB($config->db->dbname);
             }, true);
 
