@@ -2,10 +2,10 @@
 
 return [
     /**
-     * List of active modules
+     * Active modules
      */
 
     'modules' => [
-        'Rest',
+        'App',
     ],
 ];
