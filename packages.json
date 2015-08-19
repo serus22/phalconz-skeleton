@@ -1,0 +1,11 @@
+{
+  "package": {
+    "name": "serus22/phalconz-skeleton",
+    "version": "1.0.0",
+    "source": {
+      "url": "https://github.com/serus22/phalconz-skeleton",
+      "type": "git",
+      "reference": "master"
+    }
+  }
+}
