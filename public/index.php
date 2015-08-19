@@ -5,7 +5,7 @@ error_reporting(E_ALL);
 define('APP_PATH', realpath(dirname(__FILE__) . '/..'));
 define('START', microtime(true));
 
-require_once(APP_PATH . '/vendor/phalconz/Bootstrap.php');
+require_once(APP_PATH . '/vendor/serus22/phalconz/src/Bootstrap.php');
 
 use PhalconZ\Bootstrap;
 

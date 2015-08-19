@@ -2,4 +2,6 @@
 !*.dist*
 vendor/*
 .idea
+composer.lock
+composer.phar
 

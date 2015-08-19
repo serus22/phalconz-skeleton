@@ -4,8 +4,51 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "1d46e6c730898f1f60f41b229d92ea7f",
+    "hash": "af23efbc9c77d401ffa6e359feadafa3",
     "packages": [
+        {
+            "name": "serus22/phalconz",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/serus22/phalconz.git",
+                "reference": "4abeb43deacdb3dae30aaa03ac2131c3b4060591"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/serus22/phalconz/zipball/4abeb43deacdb3dae30aaa03ac2131c3b4060591",
+                "reference": "4abeb43deacdb3dae30aaa03ac2131c3b4060591",
+                "shasum": ""
+            },
+            "require": {
+                "zendframework/zend-filter": "^2.5",
+                "zendframework/zend-inputfilter": "^2.5",
+                "zendframework/zend-validator": "^2.5"
+            },
+            "type": "library",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "serus",
+                    "email": "hruzmatus@gmail.com"
+                }
+            ],
+            "description": "Phalcon project build for easy php apps",
+            "homepage": "https://github.com/serus22/phalconz",
+            "keywords": [
+                "phalcon",
+                "php",
+                "rest",
+                "zf2"
+            ],
+            "support": {
+                "source": "https://github.com/serus22/phalconz/tree/v1.0",
+                "issues": "https://github.com/serus22/phalconz/issues"
+            },
+            "time": "2015-08-19 08:30:51"
+        },
         {
             "name": "zendframework/zend-filter",
             "version": "2.5.1",
@@ -242,9 +285,13 @@
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "serus22/phalconz": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
-    "platform": [],
+    "platform": {
+        "php": ">=5.4"
+    },
     "platform-dev": []
 }

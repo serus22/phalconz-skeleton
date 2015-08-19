@@ -1,7 +1,12 @@
 {
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/serus22/phalconz"
+        }
+    ],
     "require": {
-        "zendframework/zend-filter": "^2.5",
-        "zendframework/zend-validator": "^2.5",
-        "zendframework/zend-inputfilter": "^2.5"
+        "serus22/phalconz": "dev-master",
+        "php": ">=5.4"
     }
 }
