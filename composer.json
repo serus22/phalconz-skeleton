@@ -1,8 +1,7 @@
 {
     "name": "serus22/phalconz-skeleton",
     "homepage": "https://github.com/serus22/phalconz-skeleton",
-    "description": "Skeleton Application for ZF2",
-    "license": "BSD-3-Clause",
+    "description": "Skeleton Application for PhalconZ build",
     "keywords": [
         "framework",
         "zf2"
