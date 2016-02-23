@@ -9,19 +9,21 @@ var livereload = require('gulp-livereload');
 
 //sass
 gulp.task('sass', function () {
-  gulp.src(['../**/*.scss', '!./node_modules/**'])
+  gulp.src(['../modules/**/*.scss', '../public/**/*.scss'])
     .pipe(sass({outputStyle: 'compressed'}))
     .pipe(concat('style.css'))
     .pipe(minifyCss({compatibility: 'ie8'}))
     .pipe(gulp.dest('../public/dist'))
     .pipe(livereload());
-
 });
 
 //watch
 gulp.task('watch', function() {
   livereload.listen();
-  gulp.watch('../**/*.scss', ['sass']);
+  gulp.watch(['../**/*.scss', '!../public/dist/style.css'], ['sass']);
+  gulp.watch('../**/*.phtml').on('change', function(file) {
+    livereload.changed(file.path);
+  });
 });
 
 // Default task
