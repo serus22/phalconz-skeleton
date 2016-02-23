@@ -20,7 +20,7 @@ gulp.task('sass', function () {
 //watch
 gulp.task('watch', function() {
   livereload.listen();
-  gulp.watch(['../**/*.scss', '!../public/dist/style.css'], ['sass']);
+  gulp.watch('../**/*.scss', ['sass']);
   gulp.watch('../**/*.phtml').on('change', function(file) {
     livereload.changed(file.path);
   });
