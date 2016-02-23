@@ -1,19 +1,19 @@
 {
-    "name": "serus22/phalconz-skeleton",
-    "homepage": "https://github.com/serus22/phalconz-skeleton",
-    "description": "Skeleton Application for PhalconZ build",
-    "keywords": [
-        "framework",
-        "zf2"
-    ],
-    "repositories": [
-        {
-            "type": "vcs",
-            "url": "https://github.com/serus22/phalconz"
-        }
-    ],
-    "require": {
-        "php": ">=5.5",
-        "serus22/phalconz": "dev-master"
+  "name": "serus22/phalconz-skeleton",
+  "homepage": "https://github.com/serus22/phalconz-skeleton",
+  "description": "Skeleton Application for PhalconZ build",
+  "keywords": [
+    "framework",
+    "zf2"
+  ],
+  "repositories": [
+    {
+      "type": "vcs",
+      "url": "https://github.com/serus22/phalconz"
     }
+  ],
+  "require": {
+    "php": ">=5.5",
+    "serus22/phalconz": "dev-master"
+  }
 }
