@@ -21,7 +21,7 @@ gulp.task('sass', function () {
 gulp.task('watch', function() {
   livereload.listen();
   gulp.watch('../**/*.scss', ['sass']);
-  gulp.watch('../**/*.phtml').on('change', function(file) {
+  gulp.watch(['../**/*', '!../**/*.scss']).on('change', function(file) {
     livereload.changed(file.path);
   });
 });
