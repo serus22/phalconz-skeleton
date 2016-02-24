@@ -4,5 +4,5 @@ vendor/*
 .idea
 composer.lock
 composer.phar
-
+cvonfig/application.config.php
 
