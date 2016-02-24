@@ -8,7 +8,7 @@ return [
         ],
         '/foo' => [
             'module' => 'App',
-            'controller' => 'index',
+            'controller' => 'another',
             'action' => 'foo',
         ],
     ],
