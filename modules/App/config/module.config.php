@@ -9,7 +9,7 @@ return [
         '/foo' => [
             'module' => 'App',
             'controller' => 'index',
-            'action' => 'index',
+            'action' => 'foo',
         ],
     ],
 ];
