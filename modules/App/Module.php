@@ -2,6 +2,7 @@
 
 namespace App;
 
+use App\View\MenuHelper;
 use Phalcon\Mvc\View;
 use Phalcon\Mvc\Dispatcher;
 use Phalcon\DiInterface;
@@ -25,12 +26,10 @@ class Module {
         });
 
         //Registering the view component
-        $di->set('view', function() {
-            $view = new View();
-            $view->setViewsDir(APP_PATH . '/modules/' . __NAMESPACE__ . '/view');
-            $view->setLayoutsDir('layout/');
-            $view->setTemplateAfter('main');
-            return $view;
-        });
+        $view = $di->getShared('view');
+        $view->setViewsDir(APP_PATH . '/modules/' . __NAMESPACE__ . '/view');
+        $view->setLayoutsDir('layout/');
+        $view->setTemplateAfter('main');
+        $view->setVar('menu', new MenuHelper($di));
     }
 }
