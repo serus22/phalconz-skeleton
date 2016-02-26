@@ -1,7 +1,7 @@
 # phalconz-skeleton
 Skeleton application for phalconz (like ZF2)
 
-requirements: [mongodb, phalconphp, php-mongodb, composer, livereload]
+requirements: [mongodb, phalconphp, php-mongodb, php-memcached, memcached,  composer, livereload]
 
 git clone https://github.com/serus22/phalconz-skeleton
 composer install
